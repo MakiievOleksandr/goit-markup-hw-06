@@ -366,6 +366,7 @@
           </ul>
         </div>
       </section>
+      <!-- clients -->
       <section class="clients section">
         <div class="conteiner">
           <h2 class="clients-title title">Постійні клієнти</h2>
@@ -428,7 +429,6 @@
         </div>
       </section>
       <!-- modal window -->
-
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-btn" data-modal-close>
@@ -436,6 +436,89 @@
               <use href="./images/icons/symbol-defs.svg#icon-close-black"></use>
             </svg>
           </button>
+
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="modal-form" autocomplete="off">
+            <label class="modal-label" for="username">Ім'я</label>
+            <div class="form-field">
+              <input
+                class="modal-input"
+                type="text"
+                name="username"
+                value=""
+                id="username"
+                placeholder=" "
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use
+                  href="./images/icons/symbol-defs.svg#icon-person-black"
+                ></use>
+              </svg>
+            </div>
+
+            <label class="modal-label" for="tel">Телефон</label>
+            <div class="form-field">
+              <input
+                class="modal-input"
+                type="tel"
+                name="tel"
+                value=""
+                id="tel"
+                placeholder=" "
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use
+                  href="./images/icons/symbol-defs.svg#icon-phone-black"
+                ></use>
+              </svg>
+            </div>
+
+            <label class="modal-label" for="email">Пошта</label>
+            <div class="form-field">
+              <input
+                class="modal-input"
+                type="email"
+                name="email"
+                value=""
+                id="email"
+                placeholder=" "
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use
+                  href="./images/icons/symbol-defs.svg#icon-email-black"
+                ></use>
+              </svg>
+            </div>
+            <label class="modal-label" for="comment">Коментар</label>
+            <textarea
+              class="modal-text"
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+            ></textarea>
+            <div class="checkbox-field">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                id="check"
+                name="checkbox"
+                value="true"
+              />
+              <label class="checkbox-label" for="check">
+                <span>
+                  <svg class="checkbox-icon" width="11" height="8">
+                    <use
+                      href="./images/icons/symbol-defs.svg#icon-checker"
+                    ></use>
+                  </svg>
+                </span>
+                Погоджуюся з розсилкою та приймаю
+                <a class="checkbox-link link" href="">Умови договору</a></label
+              >
+            </div>
+
+            <button class="submit-btn" type="submit">Відправити</button>
+          </form>
         </div>
       </div>
     </main>
@@ -503,6 +586,24 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form" autocomplete="off">
+          <p class="footer-form-title">Підпишіться на розсилку</p>
+          <div class="footer-input-wrap">
+            <input
+              class="footer-form-input"
+              type="email"
+              name="email"
+              value=""
+              placeholder="E-mail"
+            />
+            <button class="footer-form-btn" type="submit">
+              Підписатися
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons/symbol-defs.svg#icon-wht-plane"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
